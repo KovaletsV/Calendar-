@@ -45,7 +45,7 @@ const {user} = useTypedSelector(state => state.auth)
             <Form.Item
                 label="Дата события"
                 name="date"
-                // rules={[rules.required('Date'), rules.isDateAfter("Нельзя создать событие в прошлом")]}
+                rules={[rules.required('Date'), rules.isDateAfter("you can not make an event in the past")]}
             >
                 <DatePicker
                 onChange={(date) => selectDate(date)}
